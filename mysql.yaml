@@ -5,11 +5,10 @@
     mysql_root_password: ExpenseApp@1
     login_host: mysql.daws81z.fun
   tasks:
-  - name: ansible to install boto3 and botocore
+  - name: ansible to install pymsql
     ansible.builtin.pip:
       name:
-      - boto3
-      - botocore
+      - PyMySql
       executable: pip3.9
 
   - name: Install mysql server
